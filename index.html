@@ -2,48 +2,101 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documentación Asamblea</title>
+
   <style>
     body {
-      font-family: Arial;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #a8d8ff, #ffffff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 40px;
-      background: #f5f5f5;
+      width: 90%;
+      max-width: 400px;
     }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 10px;
+    }
+
     h1 {
-      margin-bottom: 30px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #0077cc;
     }
+
     .btn {
       display: block;
-      margin: 15px auto;
-      padding: 15px;
-      width: 260px;
-      background: #007bff;
+      margin: 12px 0;
+      padding: 14px;
+      background: #0077cc;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 16px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 500;
+      transition: 0.2s;
     }
+
     .btn:hover {
-      background: #0056b3;
+      background: #005fa3;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    @media (min-width: 600px) {
+      .container {
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>📑 Documentación Asamblea</h1>
+  <div class="container">
 
-  <a class="btn" href="https://drive.google.com/uc?export=download&id=1lATxcHA_jKu6CeKQLglCT_zmRlqut-8e" target="_blank">
-    📄 Memoria 2025
-  </a>
+    <!-- 🔽 ACÁ PONÉS EL LOGO -->
+    <img src="LOGO_URL" class="logo" alt="Atlético de Rafaela">
 
-  <a class="btn" href="https://drive.google.com/uc?export=download&id=1-nzrB8P1Snkf0xVqwcw6of2XRGNW9SqY" target="_blank">
-    📄 Informe Junta Fiscalizadora
-  </a>
+    <h1>📑 Documentación Asamblea</h1>
 
-  <a class="btn" href="https://drive.google.com/uc?export=download&id=18ebV4FQMQ9wgQ_b4t1LFAMSrTUiWkDL7" target="_blank">
-    📄 Estados Contables
-  </a>
+    <a class="btn" href="https://drive.google.com/uc?export=download&id=1lATxcHA_jKu6CeKQLglCT_zmRlqut-8e" target="_blank">
+      📄 Memoria 2025
+    </a>
+
+    <a class="btn" href="https://drive.google.com/uc?export=download&id=1-nzrB8P1Snkf0xVqwcw6of2XRGNW9SqY" target="_blank">
+      📄 Informe Junta Fiscalizadora
+    </a>
+
+    <a class="btn" href="https://drive.google.com/uc?export=download&id=18ebV4FQMQ9wgQ_b4t1LFAMSrTUiWkDL7" target="_blank">
+      📄 Estados Contables
+    </a>
+
+    <div class="footer">
+      Club Atlético de Rafaela
+    </div>
+
+  </div>
 
 </body>
 </html>
